@@ -2,7 +2,7 @@
 
 A React-based web application that extracts contact details from any website URL. This tool helps you quickly gather contact information including emails, phone numbers, addresses, social media profiles, and contact forms.
 
-# 🚨 Limitations
+# 🚨 Limitations ( maybe dont work for some websites)
 
 - Some websites may block scraping attempts due to security policies
 - Dynamic content loaded via JavaScript may not be captured
