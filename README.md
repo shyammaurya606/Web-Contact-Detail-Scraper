@@ -2,16 +2,14 @@
 
 A React-based web application that extracts contact details from any website URL. This tool helps you quickly gather contact information including emails, phone numbers, addresses, social media profiles, and contact forms.
 
-## 🚀 Features
+# 🚨 Limitations
 
-- **Multi-type Contact Extraction**: Emails, phone numbers, physical addresses, social media links, and contact forms
-- **Smart Validation**: URL format validation and contact information filtering
-- **Cross-Origin Support**: Uses CORS proxies to handle website scraping restrictions
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Real-time Feedback**: Loading states, error handling, and success notifications
-- **Copy & Share**: One-click copying and external link opening for all contact information
-- **Rate Limiting**: Respects website policies and implements appropriate delays
+- Some websites may block scraping attempts due to security policies
+- Dynamic content loaded via JavaScript may not be captured
+- Contact information embedded in images cannot be extracted
+- Rate limiting may slow down requests for large-scale usage
 
+  
 ## 🛠️ Tech Stack
 
 - **React 18** with hooks for state management
@@ -66,18 +64,14 @@ This tool is designed for legitimate business purposes and respects website poli
 - **No data storage**: All extracted information remains local to your browser
 - **Transparent operation**: All requests are made through public CORS proxies
 
-## 🚨 Limitations
 
-- Some websites may block scraping attempts due to security policies
-- Dynamic content loaded via JavaScript may not be captured
-- Contact information embedded in images cannot be extracted
-- Rate limiting may slow down requests for large-scale usage
 
 ## 🌐 CORS Proxy Information
 
 The application uses public CORS proxy services to handle cross-origin requests:
 - Primary: `cors-anywhere.herokuapp.com`
 - Fallback: `api.allorigins.win`
+- 
 
 **Note**: Public CORS proxies may have usage limitations. For production use, consider setting up your own proxy server.
 
@@ -97,37 +91,9 @@ src/
 └── index.css                   # Base styles and CSS reset
 ```
 
-## 🎨 Customization
 
-### Styling
-- Modify color schemes in CSS files
-- Adjust responsive breakpoints in media queries
-- Customize animations and transitions
 
-### Functionality
-- Add new contact information patterns in `ContactScraper.js`
-- Extend social media platform support
-- Implement additional validation rules
 
-### CORS Proxies
-- Replace proxy URLs in `ContactScraper.js` with your own services
-- Add authentication for private proxy services
-- Implement proxy rotation for better reliability
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint code analysis
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly across different websites
-5. Submit a pull request
 
 ## 📜 License
 
@@ -161,7 +127,3 @@ This tool is intended for legitimate business and research purposes only. Users 
 - Use specific pages (like contact or about pages) for better results
 - Avoid scraping large e-commerce or complex web applications
 - Wait between requests to respect rate limits
-
-## 📞 Support
-
-For issues, feature requests, or questions, please create an issue in the project repository or contact the development team.
